@@ -1,0 +1,2 @@
+# clazof
+Functional instanceof.

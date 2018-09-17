@@ -1,0 +1,28 @@
+{
+	"name": "bse",
+	"version": "0.0.0",
+	"description": "Base conversion class.",
+	"main": "bse.deploy.js",
+	"support": "bse.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"base",
+		"conversion",
+		"class",
+		"bse"
+	],
+	"homepage": "https://github.com/volkovasystems/bse",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"falzy": "^0.23.0"
+	}
+}

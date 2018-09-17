@@ -1,0 +1,2 @@
+# stringe
+Safe toString alternative.
