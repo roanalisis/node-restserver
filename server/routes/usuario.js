@@ -1,5 +1,6 @@
 const express = require('express');
 //const bycrypt = require('bcrypt');
+const crypto = require('crypto');
 const _ = require('underscore');
 const Usuario = require('../models/usuario'); //Permite crear la colección en la base de datos
 const app = express();
@@ -42,7 +43,8 @@ app.post('/usuario', function(req, res) {
         nombre: body.nombre,
         email: body.email,
         //password: bycrypt.hashSync(body.password, 10),
-        password: body.password,
+        password: crypto.scryptSync(body.password, 'salt', 32, { N: 1024 }),
+        //password: body.password,
         role: body.role
     });
 
