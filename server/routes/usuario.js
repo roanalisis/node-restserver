@@ -1,6 +1,6 @@
 const express = require('express');
-//const bycrypt = require('bcrypt');
-const crypto = require('crypto');
+const bycrypt = require('bcrypt');
+//const crypto = require('crypto');
 const _ = require('underscore');
 const Usuario = require('../models/usuario'); //Permite crear la colección en la base de datos
 const { verificaToken, verificaAdmin_Role } = require('../middlewares/autenticación')
