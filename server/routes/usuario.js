@@ -44,8 +44,8 @@ app.post('/usuario', [verificaToken, verificaAdmin_Role], function(req, res) {
     let usuario = new Usuario({
         nombre: body.nombre,
         email: body.email,
-        //password: bycrypt.hashSync(body.password, 10),
-        password: crypto.scryptSync(body.password, 'salt', 32, { N: 1024 }),
+        password: bycrypt.hashSync(body.password, 10),
+        //password: crypto.scryptSync(body.password, 'salt', 32, { N: 1024 }),
         //password: body.password,
         role: body.role
     });
