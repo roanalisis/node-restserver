@@ -67,7 +67,7 @@ app.post('/usuario', [verificaToken, verificaAdmin_Role], function(req, res) {
 })
 
 app.put('/usuario/:id', [verificaToken, verificaAdmin_Role], function(req, res) {
-    let id = req.params.id;
+    let id = req.params.id; //Es el id que viene después de los 2 puntos en la url
     let body = _.pick(req.body, ['nombre', 'email', 'img', 'role', 'estado']); //En el arreglo solo las propiedades que se podrán modificar
 
     Usuario.findByIdAndUpdate(id, body, { new: true, runValidators: true }, (err, usuarioDB) => {

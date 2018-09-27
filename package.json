@@ -20,7 +20,6 @@
         "jsonwebtoken": "^8.3.0",
         "mongoose": "^5.2.15",
         "mongoose-unique-validator": "^2.0.1",
-        "pyp": "^0.5.0",
         "underscore": "^1.9.1"
     }
 }
